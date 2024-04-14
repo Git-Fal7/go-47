@@ -2,9 +2,10 @@ package gocrafty
 
 import (
 	"errors"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft"
-	"github.com/szerookii/gocrafty/gocrafty/player"
 	"sync/atomic"
+
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft"
+	"github.com/Git-Fal7/go-47/gocrafty/player"
 )
 
 type Server struct {

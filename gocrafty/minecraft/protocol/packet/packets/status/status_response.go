@@ -1,7 +1,7 @@
 package status
 
 import (
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol"
 )
 
 type StatusResponseDataVersion struct {

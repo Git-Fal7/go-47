@@ -1,6 +1,6 @@
 package gocrafty
 
-import "github.com/szerookii/gocrafty/gocrafty/logger"
+import "github.com/Git-Fal7/go-47/gocrafty/logger"
 
 type ServerConfig struct {
 	// Logger is the logger used by the server.

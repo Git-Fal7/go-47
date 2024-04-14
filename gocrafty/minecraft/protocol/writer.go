@@ -4,8 +4,9 @@ import (
 	"bytes"
 	"encoding/binary"
 	"encoding/json"
+
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/types"
 	"github.com/google/uuid"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/types"
 )
 
 type Writer struct {

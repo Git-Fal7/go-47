@@ -1,8 +1,8 @@
 package play
 
 import (
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/types"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/types"
 )
 
 type JoinGame struct {

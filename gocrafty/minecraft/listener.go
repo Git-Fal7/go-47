@@ -3,22 +3,23 @@ package minecraft
 import (
 	"errors"
 	"fmt"
-	"github.com/google/uuid"
-	"github.com/szerookii/gocrafty/gocrafty/logger"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/handler"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol/packet"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol/packet/packets/handshake"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol/packet/packets/login"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol/packet/packets/status"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/socket"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/types"
-	"github.com/szerookii/gocrafty/gocrafty/player"
 	"io"
 	"net"
 	"runtime/debug"
 	"sync"
 	"sync/atomic"
 	"time"
+
+	"github.com/Git-Fal7/go-47/gocrafty/logger"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/handler"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol/packet"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol/packet/packets/handshake"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol/packet/packets/login"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol/packet/packets/status"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/socket"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/types"
+	"github.com/Git-Fal7/go-47/gocrafty/player"
+	"github.com/google/uuid"
 )
 
 type Listener struct {

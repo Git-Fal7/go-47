@@ -3,10 +3,11 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/szerookii/gocrafty/gocrafty"
-	"github.com/szerookii/gocrafty/gocrafty/logger"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft"
 	"os"
+
+	"github.com/Git-Fal7/go-47/gocrafty"
+	"github.com/Git-Fal7/go-47/gocrafty/logger"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft"
 )
 
 func main() {

@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol/packet"
-	"github.com/szerookii/gocrafty/gocrafty/player"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol/packet"
+	"github.com/Git-Fal7/go-47/gocrafty/player"
 )
 
 type Handler interface {

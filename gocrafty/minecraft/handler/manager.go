@@ -1,8 +1,8 @@
 package handler
 
 import (
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/handler/handlers"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol/packet/packets/play"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/handler/handlers"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol/packet/packets/play"
 )
 
 func GetHandler(id int32) (handlers.Handler, bool) {

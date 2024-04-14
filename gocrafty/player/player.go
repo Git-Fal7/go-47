@@ -1,13 +1,14 @@
 package player
 
 import (
-	"github.com/google/uuid"
-	"github.com/szerookii/gocrafty/gocrafty/logger"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol/packet/packets/play"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/socket"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/types"
-	"github.com/szerookii/gocrafty/gocrafty/world"
 	"sync"
+
+	"github.com/Git-Fal7/go-47/gocrafty/logger"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol/packet/packets/play"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/socket"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/types"
+	"github.com/Git-Fal7/go-47/gocrafty/world"
+	"github.com/google/uuid"
 )
 
 type Player struct {

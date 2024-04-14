@@ -1,11 +1,11 @@
 package packet
 
 import (
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol/packet/packets/handshake"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol/packet/packets/login"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol/packet/packets/play"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol/packet/packets/status"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/types"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol/packet/packets/handshake"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol/packet/packets/login"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol/packet/packets/play"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol/packet/packets/status"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/types"
 )
 
 var (

@@ -3,15 +3,16 @@ package socket
 import (
 	"bufio"
 	"errors"
-	"github.com/google/uuid"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol/packet"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/protocol/packet/packets/play"
-	"github.com/szerookii/gocrafty/gocrafty/minecraft/types"
 	"io"
 	"net"
 	"sync"
 	"time"
+
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol/packet"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/protocol/packet/packets/play"
+	"github.com/Git-Fal7/go-47/gocrafty/minecraft/types"
+	"github.com/google/uuid"
 )
 
 type Conn struct {
