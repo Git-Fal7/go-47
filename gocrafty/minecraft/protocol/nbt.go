@@ -6,7 +6,6 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"log"
 	"math"
 	"reflect"
@@ -15,23 +14,22 @@ import (
 )
 
 const (
-	nbtTagEnd       = 0
-	nbtTagByte      = 1
-	nbtTagShort     = 2
-	nbtTagInt       = 3
-	nbtTagLong      = 4
-	nbtTagFloat     = 5
-	nbtTagDouble    = 6
-	nbtTagByteArray = 7
-	nbtTagString    = 8
-	nbtTagList      = 9
-	nbtTagCompound  = 10
-	nbtTagIntArray  = 11
-	nbtTagLongArray = 12
+	nbtTagEnd byte = iota
+	nbtTagByte
+	nbtTagShort
+	nbtTagInt
+	nbtTagLong
+	nbtTagFloat
+	nbtTagDouble
+	nbtTagByteArray
+	nbtTagString
+	nbtTagList
+	nbtTagCompound
+	nbtTagIntArray
+	nbtTagLongArray
 )
 
 // stream writer (easier to use in some cases)
-
 type NbtWriter struct {
 	w                   *Writer
 	hierarchy           []uint8
@@ -816,7 +814,7 @@ func (d *NbtDecoder) rawRead(tagType byte) error {
 			return err
 		}
 
-		if _, err = io.CopyN(ioutil.Discard, d.r, int64(aryLen)); err != nil {
+		if _, err = io.CopyN(io.Discard, d.r, int64(aryLen)); err != nil {
 			return err
 		}
 	case nbtTagIntArray:
